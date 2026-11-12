@@ -1,0 +1,204 @@
+
+/* Universal Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.converter-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 27px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #667eea;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    background: #f9f9ff;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+/* Convert Button */
+
+#convertBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#convertBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Error Message */
+
+.error {
+    color: #e63946;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Results Section */
+
+.results {
+    margin-top: 25px;
+    display: none;
+}
+
+.results h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.result-box {
+    background: #f2f4ff;
+    border-left: 4px solid #667eea;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-box span {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.result-box h3 {
+    color: #667eea;
+    font-size: 17px;
+}
+
+/* Reset Button */
+
+.reset-btn {
+    display: none;
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: #444;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 25px;
+    color: #999;
+    font-size: 11px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .converter-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .result-box h3 {
+        font-size: 15px;
+    }
+}

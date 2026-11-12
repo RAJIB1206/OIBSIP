@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="converter-card">
+
+            <div class="icon">🌡️</div>
+
+            <h1>Temperature <span>Converter</span></h1>
+
+            <p class="subtitle">
+                Convert temperatures easily between Celsius,
+                Fahrenheit and Kelvin.
+            </p>
+
+            <!-- Temperature Input -->
+            <div class="input-group">
+                <label for="temperature">Enter Temperature</label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature"
+                    step="any"
+                >
+            </div>
+
+            <!-- Unit Selection -->
+            <div class="input-group">
+                <label for="unit">Select Input Unit</label>
+
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <!-- Convert Button -->
+            <button id="convertBtn">
+                Convert Temperature
+            </button>
+
+            <!-- Error Message -->
+            <p id="error" class="error"></p>
+
+            <!-- Results -->
+            <div class="results" id="results">
+
+                <h2>Conversion Results</h2>
+
+                <div class="result-box">
+                    <span>Celsius</span>
+                    <h3 id="celsiusResult">-- °C</h3>
+                </div>
+
+                <div class="result-box">
+                    <span>Fahrenheit</span>
+                    <h3 id="fahrenheitResult">-- °F</h3>
+                </div>
+
+                <div class="result-box">
+                    <span>Kelvin</span>
+                    <h3 id="kelvinResult">-- K</h3>
+                </div>
+
+            </div>
+
+            <button id="resetBtn" class="reset-btn">
+                Reset
+            </button>
+
+            <footer>
+                <p>© 2026 Temperature Converter | Created with ❤️</p>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
